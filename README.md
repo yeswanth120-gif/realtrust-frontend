@@ -1,5 +1,7 @@
 # RealTrust - Real Estate Solutions Platform
 
+# Open in Chrome or FireFox Browsers for Correct Compiled website for Next.js 
+
 A modern, full-stack real estate platform built with Next.js and Node.js/Express, offering comprehensive features for managing projects, clients, contacts, and subscribers.
 
 ## 📋 Table of Contents
