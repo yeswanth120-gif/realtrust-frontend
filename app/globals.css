@@ -152,8 +152,8 @@
   --z-tooltip: 1500;
 }
 
-/* Dark Mode */
-@media (prefers-color-scheme: dark) {
+/* Dark Mode - DISABLED - Force Light Mode Only */
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0f172a;
     --background-alt: #1e293b;
@@ -167,7 +167,7 @@
     --color-neutral-100: #1e293b;
     --color-neutral-200: #334155;
   }
-}
+} */
 
 /* ========================================
    GLOBAL STYLES
@@ -334,9 +334,9 @@ a:hover {
 
 @media (prefers-color-scheme: dark) {
   .btn-secondary {
-    background: var(--color-neutral-800);
-    color: var(--color-primary-400);
-    border-color: var(--color-neutral-700);
+    background: var(--color-neutral-100);
+    color: var(--color-primary-600);
+    border-color: var(--color-neutral-200);
   }
 }
 
@@ -354,8 +354,8 @@ a:hover {
 
 @media (prefers-color-scheme: dark) {
   .btn-outline {
-    color: var(--color-primary-400);
-    border-color: var(--color-primary-600);
+    color: var(--color-primary-600);
+    border-color: var(--color-primary-300);
   }
 }
 
@@ -441,8 +441,8 @@ label {
   .input,
   .textarea,
   .select {
-    border-color: var(--color-neutral-700);
-    background: var(--color-neutral-900);
+    border-color: var(--color-neutral-300);
+    background: var(--background);
   }
 }
 
@@ -506,8 +506,8 @@ label {
 
 @media (prefers-color-scheme: dark) {
   .card {
-    border-color: var(--color-neutral-800);
-    background: var(--color-neutral-900);
+    border-color: var(--color-neutral-200);
+    background: var(--background);
   }
 }
 
@@ -546,8 +546,8 @@ label {
 
 @media (prefers-color-scheme: dark) {
   .navbar {
-    background: rgba(15, 23, 42, 0.98);
-    border-bottom-color: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.98);
+    border-bottom-color: rgba(0, 0, 0, 0.08);
   }
 }
 
@@ -627,15 +627,15 @@ label {
 
 @media (prefers-color-scheme: dark) {
   .nav-link {
-    color: #bae6fd;
+    color: #0284c7;
   }
 
   .nav-link:hover {
-    color: #ffffff;
+    color: #0369a1;
   }
 
   .nav-link:hover::after {
-    background: #38bdf8;
+    background: #0284c7;
   }
 }
 
@@ -709,7 +709,7 @@ label {
 
 @media (prefers-color-scheme: dark) {
   .hero-background {
-    background: linear-gradient(135deg, var(--color-neutral-900) 0%, var(--color-neutral-800) 100%);
+    background: linear-gradient(135deg, var(--color-primary-50) 0%, var(--color-secondary-50) 100%);
   }
 }
 
@@ -839,9 +839,9 @@ label {
 
 @media (prefers-color-scheme: dark) {
   .badge-primary {
-    background: rgba(14, 165, 233, 0.1);
-    color: var(--color-primary-400);
-    border-color: var(--color-primary-700);
+    background: var(--color-primary-100);
+    color: var(--color-primary-700);
+    border-color: var(--color-primary-300);
   }
 }
 
@@ -909,7 +909,7 @@ label {
 
 @media (prefers-color-scheme: dark) {
   .divider {
-    background: var(--color-neutral-800);
+    background: var(--color-neutral-200);
   }
 }
 
@@ -926,7 +926,7 @@ label {
 
 @media (prefers-color-scheme: dark) {
   .footer {
-    background: var(--color-neutral-950);
+    background: var(--color-neutral-900);
   }
 }
 
